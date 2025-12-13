@@ -1,0 +1,36 @@
+def caesar_encrypt(text, shift):
+    result = ""
+
+    for char in text:
+        if char.isalpha():
+            base = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - base + shift) % 26 + base)
+        else:
+            result += char
+
+    return result
+
+
+def caesar_decrypt(text, shift):
+    return caesar_encrypt(text, -shift)
+
+
+print("===== Caesar Cipher Tool =====")
+print("1. Encrypt")
+print("2. Decrypt")
+
+choice = input("Choose option (1/2): ")
+
+message = input("Enter your message: ")
+shift = int(input("Enter shift value: "))
+
+if choice == "1":
+    encrypted = caesar_encrypt(message, shift)
+    print("\nEncrypted Message:", encrypted)
+
+elif choice == "2":
+    decrypted = caesar_decrypt(message, shift)
+    print("\nDecrypted Message:", decrypted)
+
+else:
+    print("Invalid choice!")
