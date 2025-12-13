@@ -21,12 +21,6 @@ This tool lets you encode and decode messages using the classic Caesar cipher al
 - 📱 Responsive design
 
 ---
-
-## 🚀 Live Demo  
-"C:\Users\admin\Videos\Screen Recordings\Screen Recording 2025-12-11 161506.mp4"
-
----
-
 ## 📦 How to Use  
 1. Enter your message in the input box  
 2. Enter a **shift value** (e.g., 2, 3, 5...)  
